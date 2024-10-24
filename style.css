@@ -1,0 +1,317 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecdce3;
+}
+
+header {
+    background-color: #cc94ac;
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap; /* Для адаптивности */
+    justify-content: space-between;
+    align-items: center; /* Центрирует содержимое по вертикали */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Для горизонтального отображения */
+    flex-wrap: wrap; /* Позволяет переносить элементы на следующую строку */
+    justify-content: center; /* Центрирует навигацию */
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 12px;
+}
+
+nav ul li a {
+    color: rgb(137, 10, 86);
+    text-decoration: none;
+    font-size: 16px; /* Меньший размер шрифта для мобильных устройств */
+}
+
+.logo img {
+    height: 60px; /* Уменьшаем высоту логотипа */
+}
+
+main {
+    padding: 20px;
+}
+
+.gallery {
+    margin: 20px 0;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.photo-item {
+    overflow: hidden; /* Скрываем часть изображения, выходящую за пределы контейнера */
+    border-radius: 25px; /* Закругляем углы контейнера */
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Плавный переход для эффекта увеличения */
+}
+
+.photo-item:hover img {
+    transform: scale(1.1); /* Увеличиваем изображение при наведении */
+}
+
+footer {
+    background-color: #592a3e;
+    color: #EFEEEA;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.social a {
+    margin: 0 10px;
+}
+
+footer img {
+    height: 20px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+.about-us {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+    border-radius: 10px;
+}
+
+.about-us h1 {
+    font-size: 24px;
+
+}
+
+.about-us p {
+    line-height: 1.6;
+ 
+}
+
+footer {
+    background-color:#592a3e;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-media img {
+    width: 30px; /* Настройте размер иконок */
+    margin: 0 10px;
+}
+.pr img{
+    width: 30%;
+    height: auto;
+}
+.pr{
+    margin-left: 80px;
+    margin-bottom: 25px;
+}
+.x{
+   
+    color: rgb(137, 10, 86);
+}
+.b{
+    margin-left: 690px;
+    margin-top: -582px;
+   
+}
+.b img{
+    width: 550px ;
+    height: 550px;
+    border-radius:  22px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.m {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: center; /* Выравнивание по центру */
+}
+
+.m img {
+    width: 20%;
+    height: auto;
+    border-radius: 25px;
+    margin-right: 20px;
+    border: 3.5px solid  rgb(137, 10, 86); /* Черная рамка для фото */
+
+    transition: transform 0.3s ease; /* Плавный переход для эффекта увеличения */
+
+    
+    
+}
+.m:hover img {
+    transform: scale(1.1); /* Увеличиваем изображение при наведении */
+}
+.text {
+    border: 2px solid  rgb(137, 10, 86);
+    background-color: #AC979C;
+    padding: 15px;
+    border-radius: 10px;
+    width: 50%; /* Подберите ширину текста в зависимости от Ваших нужд */
+    text-align: left; /* Выравнивание текста влево в блоке */
+    
+}
+
+
+.pricing-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Вертикальное выравнивание по верхнему краю */
+}
+
+.price-list {
+    flex: 1; /* Занимает оставшееся пространство */
+    margin-right: 20px; /* Отступ между прайсом и изображением */
+}
+
+.image-container {
+    flex: 0 0 auto; /* Не позволяет картинке занимать больше, чем её размер */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto; /* Поддержка пропорций изображения */
+}
+
+h5 {
+    text-align: center;
+    color: rgb(137, 10, 86);
+    font-size: 19px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.service-name {
+    font-weight: bold;
+}
+
+.service-price {
+    color: rgb(137, 10, 86);
+}
+
+.pricing {
+    width: 850px; /* Задаем ширину для десктопа */
+}
+
+
+.l img{
+    width: 200px;
+    height:270px ;
+
+}
+.l{
+    margin-bottom: 20px;
+}
+h6{
+    font-size:25px ;
+    margin-top: 2px;
+    text-align: center;
+}
+/*мобил*/
+@media(min-width: 1200px){
+
+}
+
+@media(min-width: 992px){
+    
+}
+
+@media(min-width: 768px){
+    
+}
+
+@media(min-width: 480px){
+    
+}
+
+@media(min-width: 320px){
+    
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Вертикальное расположение для мобильных устройств */
+        align-items: flex-start; /* Выравнивание по левому краю */
+    }
+
+    nav ul {
+        flex-direction: column; /* Вертикальное расположение элементов навигации */
+        margin-top: 10px; /* Отступ сверху */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Вертикальные отступы между элементами навигации */
+    }
+
+    .logo img {
+        height: 50px; /* Еще меньше для мобильной версии */
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing {
+        width: 100%; /* Занимаем 100% доступной ширины */
+        padding: 10px; /* Немного отступов */
+    }
+
+    .pricing-container {
+        flex-direction: column; /* Изменяем направление на вертикальное */
+        align-items: center; /* Центрируем содержимое */
+    }
+
+    .price-list {
+        margin-right: 0; /* Убираем отступ справа */
+        margin-bottom: 20px; /* Добавляем отступ снизу */
+    }
+
+    h5 {
+        font-size: 16px; /* Уменьшаем размер заголовка */
+    }
+
+    li {
+        flex-direction: column; /* Выравниваем текст по вертикали */
+        align-items: flex-start; /* Выравниваем по левому краю */
+        margin: 5px 0; /* Уменьшаем отступы между элементами списка */
+    }
+}

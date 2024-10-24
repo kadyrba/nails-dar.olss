@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Контакты - Салон Маникюра</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=ВАШ_API_КЛЮЧ"></script>
+    <style>
+        /* Установим размеры карты */
+        #map {
+            height: 400px; /* Высота карты */
+            width: 100%;   /* Ширина карты */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo (2).png" alt="Логотип" href="index.html">
+        </div>
+        <nav>
+            <ul>
+              <b>  <li><a href="index.html">Главная</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="booking.html">Наши мастера</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Контакты</h1>
+        <p>Телефон: +7 (999) 123-45-11</p>
+        <p>Адрес: ул. Близняшкино д.25, Уфа</p>
+        <p>Для записи пишите нам в телеграмм : </p>
+  
+        <div class="l">
+            <img src="img/тг.png" alt="Маникюр 3">
+        </div>
+    </main>
+  
+    
+
+
+<script>
+    // Инициализация карты
+    function initMap() {
+    var salonLocation = {lat: 54.731004, lng: 55.934859}; // Обновленные координаты Вашего салона
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: salonLocation
+    });
+
+    var marker = new google.maps.Marker({
+        position: salonLocation,
+        map: map,
+        title: 'Наш салон!'
+    });
+}
+
+    // Запускаем инициализацию карты
+    window.onload = initMap;
+</script>
+
+<footer>
+    <div class="social">
+        <p>Мы в соцсетях:</p>
+        <a href="https://www.instagram.com/"><img src="img/inst.png" alt="Instagram"></a>
+        <a href="https://vk.com/"><img src="img/vk.png" alt="VK"></a>
+
+        <div id="map"></div>
+        </div>
+        <p>&copy; 2023 Салон Маникюра</p>
+    </footer>
+</body>
+</html>
