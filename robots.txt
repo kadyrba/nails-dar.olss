@@ -3,9 +3,8 @@ Disallow: /private/
 Disallow: /tmp/
 Disallow: /admin/
 
-# Разрешить индексацию
+# Позволяем индексацию всех остальных страниц
 Allow: /
 
-Host: https://kadyrba.github.io/nails-dar.olss/contacts.html
-# Указать местоположение карты сайта (если она есть)
+# Указываем место для карты сайта, если она доступна
 Sitemap: https://kadyrba.github.io/nails-dar.olss/sitemap.xml
