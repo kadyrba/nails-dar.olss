@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /admin/
+
+# Разрешить индексацию
+Allow: /
+
+# Указать местоположение карты сайта (если она есть)
+Sitemap: https://kadyrba.github.io/nails-dar.olss/sitemap.xml
