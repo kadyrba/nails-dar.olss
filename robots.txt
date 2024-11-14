@@ -6,5 +6,6 @@ Disallow: /admin/
 # Разрешить индексацию
 Allow: /
 
+Host: https://kadyrba.github.io/nails-dar.olss/contacts.html
 # Указать местоположение карты сайта (если она есть)
 Sitemap: https://kadyrba.github.io/nails-dar.olss/sitemap.xml
