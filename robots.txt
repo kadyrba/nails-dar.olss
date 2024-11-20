@@ -8,4 +8,4 @@ Allow: /
 
 # Указываем место для карты сайта, если она доступна
 Sitemap: https://kadyrba.github.io/nails-dar.olss/sitemap.xml
-google-site-verification=zahGm1iRNGwSLlrItlikDlklDjsLGN6W2VGca16xIRk
+
